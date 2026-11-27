@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Python Code Explainer | Python Tools Portal</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+  <script src="../../js/theme.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="site-title"><a href="../../index.html">Python Tools Portal</a></h1>
+    <button type="button" id="theme-toggle" aria-pressed="false">Switch to dark theme</button>
+  </header>
+
+  <main>
+    <a class="back-link" href="../../index.html">&larr; Back to all tools</a>
+    <h2>Python Code Explainer</h2>
+    <p>Paste a few lines of Python and get a plain-language explanation of each line.</p>
+
+    <label for="code-input">Your Python code</label>
+    <textarea id="code-input" rows="10" spellcheck="false" autocomplete="off" autocapitalize="off"
+      placeholder="for number in range(3):&#10;    print(number)"></textarea>
+
+    <button type="button" id="explain-button">Explain</button>
+
+    <p id="status" aria-live="polite"></p>
+    <ol id="results" class="results"></ol>
+
+    <p class="note">
+      This tool matches common patterns one line at a time. It is not a full Python reader, so
+      lines it does not know yet (for example, parts of a list spread over many lines) show
+      "No rule for this line yet." Your code is never run.
+    </p>
+  </main>
+
+  <script src="rules.js"></script>
+  <script src="explainer.js"></script>
+</body>
+</html>

@@ -13,7 +13,9 @@ Update this section as files are added.
 - `index.html` — portal homepage with one card per tool
 - `css/styles.css` — shared styles, including the light and dark theme colours
 - `js/theme.js` — shared light/dark theme toggle
-- `tools/tool-1/index.html` — placeholder page for the first tool
+- `tools/code-explainer/index.html` — the Python code explainer page
+- `tools/code-explainer/rules.js` — the explainer's rule list (pattern → plain-language explanation)
+- `tools/code-explainer/explainer.js` — reads the pasted code and shows the explanations
 
 ## Key Requirements
 
@@ -35,8 +37,8 @@ A web portal where visitors try small Python-programming tools.
 ### Phases
 
 1. **Phase 1:** the portal plus its first tool, the Python code explainer (paste a snippet, get a plain-language line-by-line explanation from built-in rules; no server).
-   - [x] Portal: homepage, theme toggle, and a "Tool 1 — coming soon" placeholder card that opens and returns via the navigation. Neutral styling for now; visual design to be chosen later.
-   - [ ] First tool: the Python code explainer (replaces the placeholder).
+   - [x] Portal: homepage, theme toggle, and a placeholder card that opens and returns via the navigation. Neutral styling for now; visual design to be chosen later.
+   - [x] First tool: the Python code explainer (replaced the placeholder; beginner-basics rules, line-by-line output).
 2. **Phase 2:** more explainer rules and polish (to be decided).
 3. **Phase 3:** more tools (to be decided).
 
