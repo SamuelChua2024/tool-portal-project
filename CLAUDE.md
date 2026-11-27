@@ -17,6 +17,23 @@ The repository is nearly empty for now (only `.git` and this file). Update this 
 2. Users can toggle between a light and a dark theme. The default is the light theme.
 3. Text must stay easy to read, with good contrast, in both the light and the dark theme.
 
+## Feature Plan
+
+A web portal where visitors try small Python-programming tools.
+
+### Portal structure
+
+- **Homepage** (`index.html`): short intro plus one card per tool.
+- **Open a tool:** click its card; each tool lives on its own page in `tools/<tool-name>/`.
+- **Get back:** every tool page has a "Back to all tools" link to the homepage.
+- **Add a new tool later:** create a `tools/<tool-name>/` folder and add one card to the homepage. Shared styles and the theme toggle are reused, so nothing else changes.
+
+### Phases
+
+1. **Phase 1:** the portal plus its first tool, the Python code explainer (paste a snippet, get a plain-language line-by-line explanation from built-in rules; no server).
+2. **Phase 2:** more explainer rules and polish (to be decided).
+3. **Phase 3:** more tools (to be decided).
+
 ## Rules for Claude
 
 - Explain technical terms in plain language.
